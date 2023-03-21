@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/86178433/226532809-ce60588a-b954-41bf-a0f6-4d65a59d90d1.png" width="322" height="300.86">
+<img src="https://user-images.githubusercontent.com/86178433/226532809-ce60588a-b954-41bf-a0f6-4d65a59d90d1.png" width="272" height="250.86">
 
 
 ### eschool /  Project Structure
