@@ -1,6 +1,6 @@
-# eschool  ![Splash](https://user-images.githubusercontent.com/86178433/226532809-ce60588a-b954-41bf-a0f6-4d65a59d90d1.png width="100" height="230")
+# eschool  <img src="https://user-images.githubusercontent.com/86178433/226532809-ce60588a-b954-41bf-a0f6-4d65a59d90d1.png" width="100" height="230">
 
-<!-- <img src="https://user-images.githubusercontent.com/86178433/220318699-30b09ba4-0ae5-4702-842a-7dfdd7504bfe.png" width="100" height="230"> -->
+
 ### Project Structure
 
 After successful build, your application structure should look like this:
