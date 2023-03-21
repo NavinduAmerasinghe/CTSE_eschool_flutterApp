@@ -8,6 +8,9 @@
 ├── IT20205874   - Jayakody J.A.B.U
 ```
 
+### eschool /  Project Screenshots
+
+After successful build, your application structure should look like this:
 
 ### eschool /  Project Structure
 
