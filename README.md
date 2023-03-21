@@ -9,7 +9,7 @@
 ```
 
 ### eschool /  Project Screenshots
-<img src="https://user-images.githubusercontent.com/86178433/226538016-6da283da-a88f-488e-8832-909b82a70eb6.png" width="114" height="596"> 
+<img src="https://user-images.githubusercontent.com/86178433/226538016-6da283da-a88f-488e-8832-909b82a70eb6.png" width="114" height="496"> 
 <img src="https://user-images.githubusercontent.com/86178433/226537839-b4439409-80b3-47f5-bd98-f6c7ff2ebebd.png" width="114" height="596"> 
 <img src="https://user-images.githubusercontent.com/86178433/226538096-8818a2d0-4ac1-4f16-b01a-12eb1c2ce2ea.png" width="114" height="596"> 
 
