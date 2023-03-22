@@ -94,6 +94,22 @@ class AddEmployeeController extends GetxController {
         });
 
 
+        imageUrl = "";
+        employeeNameController.clear();
+        employeeEmailController.clear();
+        employeeDobController.clear();
+        employeePhoneController.clear();
+      } on FirebaseAuthException catch (e) {
+        snackBar = SnackBar(
+          elevation: 0,
+          behavior: SnackBarBehavior.floating,
+          backgroundColor: Colors.transparent,
+          content: AwesomeSnackbarContent(
+            contentType: ContentType.failure,
+            title: 'Oh, oh!',
+            message: 'Employee adding process has failed.',
+          ),
+        );
 
         snackBar = SnackBar(
           elevation: 0,
