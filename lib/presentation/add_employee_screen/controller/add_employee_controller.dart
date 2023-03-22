@@ -95,6 +95,17 @@ class AddEmployeeController extends GetxController {
 
 
 
+        snackBar = SnackBar(
+          elevation: 0,
+          behavior: SnackBarBehavior.floating,
+          backgroundColor: Colors.transparent,
+          content: AwesomeSnackbarContent(
+            contentType: ContentType.failure,
+            title: 'Oh, oh!',
+            message: '${e.message}',
+          ),
+        );
+      }
     } else {
       Fluttertoast.showToast(
         msg: 'No internet connection. Please turn on your internet.',
