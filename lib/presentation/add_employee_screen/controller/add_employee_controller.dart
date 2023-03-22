@@ -79,6 +79,10 @@ class AddEmployeeController extends GetxController {
           password: employeePhoneController.text,
         );
 
+        if (imageUrl == "") {
+          imageUrl =
+              'https://firebasestorage.googleapis.com/v0/b/eschool-12247.appspot.com/o/profile%2Fdefault_user.png?alt=media&token=9d70f477-0da0-4f02-85cc-20dca1c34a00';
+        }
 
         // Store the user profile information in Firestore
         await FirebaseFirestore.instance
