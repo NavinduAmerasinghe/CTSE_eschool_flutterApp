@@ -93,6 +93,16 @@ class AddEmployeeController extends GetxController {
           'image': imageUrl
         });
 
+        snackBar = SnackBar(
+          elevation: 0,
+          behavior: SnackBarBehavior.floating,
+          backgroundColor: Colors.transparent,
+          content: AwesomeSnackbarContent(
+            contentType: ContentType.success,
+            title: 'Success',
+            message: 'Employee added successfully.',
+          ),
+        );
 
         imageUrl = "";
         employeeNameController.clear();
