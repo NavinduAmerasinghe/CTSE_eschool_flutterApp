@@ -54,3 +54,29 @@ class CustomFloatingButton extends StatelessWidget {
       ),
     );
   }
+
+  _buildDecoration() {
+    return BoxDecoration(
+      color: _setColor(),
+      borderRadius: _setBorderRadius(),
+    );
+  }
+
+  _setColor() {
+    switch (variant) {
+      default:
+        return ColorConstant.blueGray700;
+    }
+  }
+
+  _setBorderRadius() {
+    switch (shape) {
+      default:
+        return BorderRadius.circular(
+          getHorizontalSize(
+            22.00,
+          ),
+        );
+    }
+  }
+}
