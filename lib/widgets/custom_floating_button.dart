@@ -80,3 +80,11 @@ class CustomFloatingButton extends StatelessWidget {
     }
   }
 }
+
+enum FloatingButtonShape {
+  CircleBorder22,
+}
+
+enum FloatingButtonVariant {
+  FillBluegray700,
+}
