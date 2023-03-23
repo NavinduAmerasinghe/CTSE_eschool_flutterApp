@@ -27,3 +27,13 @@ class CustomFloatingButton extends StatelessWidget {
   double? height;
 
   Widget? child;
+
+  @override
+  Widget build(BuildContext context) {
+    return alignment != null
+        ? Align(
+            alignment: alignment ?? Alignment.center,
+            child: _buildFabWidget(),
+          )
+        : _buildFabWidget();
+  }
