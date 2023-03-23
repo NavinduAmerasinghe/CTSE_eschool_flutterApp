@@ -65,5 +65,6 @@ class CustomFloatingButton extends StatelessWidget {
   _setColor() {
     switch (variant) {
       default:
+        return ColorConstant.blueGray700;
     }
   }
