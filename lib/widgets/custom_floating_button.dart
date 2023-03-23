@@ -58,5 +58,6 @@ class CustomFloatingButton extends StatelessWidget {
   _buildDecoration() {
     return BoxDecoration(
       color: _setColor(),
+      borderRadius: _setBorderRadius(),
     );
   }
