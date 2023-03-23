@@ -71,7 +71,8 @@ class CustomFloatingButton extends StatelessWidget {
 
   _setBorderRadius() {
     switch (shape) {
-      
+      default:
+        
     }
   }
 }
