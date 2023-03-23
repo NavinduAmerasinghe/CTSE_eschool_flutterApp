@@ -85,3 +85,6 @@ enum FloatingButtonShape {
   CircleBorder22,
 }
 
+enum FloatingButtonVariant {
+  FillBluegray700,
+}
