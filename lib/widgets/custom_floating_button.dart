@@ -68,3 +68,10 @@ class CustomFloatingButton extends StatelessWidget {
         return ColorConstant.blueGray700;
     }
   }
+
+  _setBorderRadius() {
+    switch (shape) {
+      
+    }
+  }
+}
