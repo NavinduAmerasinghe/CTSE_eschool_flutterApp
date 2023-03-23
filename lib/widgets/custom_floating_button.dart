@@ -44,7 +44,13 @@ class CustomFloatingButton extends StatelessWidget {
       child: FloatingActionButton(
         backgroundColor: _setColor(),
         onPressed: onTap,
-        
+        child: Container(
+          alignment: Alignment.center,
+          width: getSize(width ?? 0),
+          height: getSize(height ?? 0),
+          decoration: _buildDecoration(),
+          child: child,
+        ),
       ),
     );
   }
