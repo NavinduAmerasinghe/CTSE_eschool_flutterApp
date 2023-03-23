@@ -37,3 +37,14 @@ class CustomFloatingButton extends StatelessWidget {
           )
         : _buildFabWidget();
   }
+
+  _buildFabWidget() {
+    return Padding(
+      padding: margin ?? EdgeInsets.zero,
+      child: FloatingActionButton(
+        backgroundColor: _setColor(),
+        onPressed: onTap,
+        
+      ),
+    );
+  }
