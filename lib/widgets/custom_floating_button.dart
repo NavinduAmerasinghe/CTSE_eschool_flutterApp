@@ -7,4 +7,7 @@ class CustomFloatingButton extends StatelessWidget {
       this.variant,
       this.alignment,
       this.margin,
-      );
+      this.onTap,
+      this.width,
+      this.height,
+      this.child});
