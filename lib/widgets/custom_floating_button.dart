@@ -72,7 +72,9 @@ class CustomFloatingButton extends StatelessWidget {
   _setBorderRadius() {
     switch (shape) {
       default:
-        
+        return BorderRadius.circular(
+          
+        );
     }
   }
 }
