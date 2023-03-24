@@ -158,13 +158,13 @@ class AddTeacherScreen extends GetWidget<AddTeacherController> {
     Get.back();
   }
 
-  // onTapSubmit(context) async {
-  //   FocusScope.of(context).requestFocus(new FocusNode());
-  //   if (_formKey.currentState!.validate()) {
-  //     await submitController.createTeacherAccount();
-  //     ScaffoldMessenger.of(context)
-  //       ..hideCurrentSnackBar()
-  //       ..showSnackBar(controller.snackBar);
-  //   }
-  // }
+  onTapSubmit(context) async {
+    FocusScope.of(context).requestFocus(new FocusNode());
+    if (_formKey.currentState!.validate()) {
+      await submitController.createTeacherAccount();
+      ScaffoldMessenger.of(context)
+        ..hideCurrentSnackBar()
+        ..showSnackBar(controller.snackBar);
+    }
+  }
 }
