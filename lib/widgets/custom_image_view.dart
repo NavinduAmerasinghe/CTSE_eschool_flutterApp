@@ -26,3 +26,6 @@ class CustomImageView extends StatelessWidget {
   final String placeHolder;
   Alignment? alignment;
   VoidCallback? onTap;
+  EdgeInsetsGeometry? margin;
+  BorderRadius? radius;
+  BoxBorder? border;
