@@ -36,6 +36,9 @@ class CustomImageView extends StatelessWidget {
     this.url,
     this.imagePath,
     this.svgPath,
+    this.file,
+    this.height,
+    this.width,
     this.border,
     this.placeHolder = 'assets/images/image_not_found.png',
   });
