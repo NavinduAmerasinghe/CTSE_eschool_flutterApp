@@ -24,7 +24,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         visualDensity: VisualDensity.standard,
       ),
-    
+      translations: AppLocalization(),
+      locale: Get.deviceLocale,
+      fallbackLocale: Locale('en', 'US'),
+      title: 'eschool',
+      initialBinding: InitialBindings(),
+      initialRoute: AppRoutes.initialRoute,
+      getPages: AppRoutes.pages,
     );
   }
 }
