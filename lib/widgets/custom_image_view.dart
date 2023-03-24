@@ -80,3 +80,11 @@ class CustomImageView extends StatelessWidget {
       return _buildImageWithBorder();
     }
   }
+
+  ///build the image with border and border radius style
+  _buildImageWithBorder() {
+    if (border != null) {
+      
+  }
+
+  
