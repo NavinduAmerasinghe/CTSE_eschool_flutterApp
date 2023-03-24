@@ -24,4 +24,5 @@ class CustomImageView extends StatelessWidget {
   Color? color;
   BoxFit? fit;
   final String placeHolder;
- 
+  Alignment? alignment;
+  VoidCallback? onTap;
