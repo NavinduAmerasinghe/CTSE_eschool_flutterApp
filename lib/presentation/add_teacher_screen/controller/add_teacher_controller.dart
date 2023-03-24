@@ -138,26 +138,26 @@ class AddTeacherController extends GetxController {
         );
       }
     } else {
-      Fluttertoast.showToast(
-        msg: 'No internet connection. Please turn on your internet.',
-        toastLength: Toast.LENGTH_LONG,
-        gravity: ToastGravity.BOTTOM,
-        timeInSecForIosWeb: 5,
-        backgroundColor: Colors.red,
-        textColor: Colors.white,
-        fontSize: 16.0,
-      );
+      // Fluttertoast.showToast(
+      //   msg: 'No internet connection. Please turn on your internet.',
+      //   toastLength: Toast.LENGTH_LONG,
+      //   gravity: ToastGravity.BOTTOM,
+      //   timeInSecForIosWeb: 5,
+      //   backgroundColor: Colors.red,
+      //   textColor: Colors.white,
+      //   fontSize: 16.0,
+      // );
     }
   }
 
   @override
-  void onClose() {
-    super.onClose();
-    imageUrl = "";
-    teacherEmailController.dispose();
-    teacherNameController.dispose();
-    teacherPhoneController.dispose();
-    teacherDobController.dispose();
-    teacherSubjectController.dispose();
-  }
+  // void onClose() {
+  //   super.onClose();
+  //   imageUrl = "";
+  //   teacherEmailController.dispose();
+  //   teacherNameController.dispose();
+  //   teacherPhoneController.dispose();
+  //   teacherDobController.dispose();
+  //   teacherSubjectController.dispose();
+  // }
 }
