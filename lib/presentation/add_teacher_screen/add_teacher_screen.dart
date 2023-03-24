@@ -140,13 +140,13 @@ class AddTeacherScreen extends GetWidget<AddTeacherController> {
                         }
                         return null;
                       }),
-                  CustomButton(
-                    height: getVerticalSize(45),
-                    text: "lbl_save".tr,
-                    margin: getMargin(left: 42, top: 50, right: 42),
-                    fontStyle: ButtonFontStyle.RalewayBold20,
-                    onTap: () => onTapSubmit(context),
-                  ),
+                  // CustomButton(
+                  //   height: getVerticalSize(45),
+                  //   text: "lbl_save".tr,
+                  //   margin: getMargin(left: 42, top: 50, right: 42),
+                  //   fontStyle: ButtonFontStyle.RalewayBold20,
+                  //   onTap: () => onTapSubmit(context),
+                  // ),
                 ]),
           ),
         ),
