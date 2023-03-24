@@ -21,4 +21,7 @@ class CustomImageView extends StatelessWidget {
 
   double? height;
   double? width;
-  
+  Color? color;
+  BoxFit? fit;
+  final String placeHolder;
+ 
