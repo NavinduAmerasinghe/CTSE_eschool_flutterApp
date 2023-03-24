@@ -53,7 +53,63 @@ class CustomImageView extends StatelessWidget {
   Widget build(BuildContext context) {
     return alignment != null
         ? Align(
-           
+            alignment: alignment!,
+            child: _buildWidget(),
           )
         : _buildWidget();
   }
+
+  Widget _buildWidget() {
+    return Padding(
+      padding: margin ?? EdgeInsets.zero,
+      child: InkWell(
+        onTap: onTap,
+        child: _buildCircleImage(),
+      ),
+    );
+  }
+
+  ///build the image with border radius
+  _buildCircleImage() {
+    if (radius != null) {
+      return ClipRRect(
+        borderRadius: radius,
+        child: _buildImageWithBorder(),
+      );
+    } else {
+      return _buildImageWithBorder();
+    }
+  }
+
+  ///build the image with border and border radius style
+  _buildImageWithBorder() {
+    if (border != null) {
+      return Container(
+        decoration: BoxDecoration(
+          border: border,
+          borderRadius: radius,
+        ),
+        child: _buildImageView(),
+      );
+    } else {
+      return _buildImageView();
+    }
+  }
+
+  Widget _buildImageView() {
+    if (svgPath != null && svgPath!.isNotEmpty) {
+      return Container(
+        height: height,
+        width: width,
+        child: SvgPicture.asset(
+          svgPath!,
+          height: height,
+          width: width,
+          fit: fit ?? BoxFit.contain,
+          color: color,
+        ),
+      );
+    
+    return SizedBox();
+  }
+}
