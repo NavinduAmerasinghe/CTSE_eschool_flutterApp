@@ -29,3 +29,16 @@ class CustomImageView extends StatelessWidget {
   EdgeInsetsGeometry? margin;
   BorderRadius? radius;
   BoxBorder? border;
+
+  ///a [CustomImageView] it can be used for showing any type of images
+  /// it will shows the placeholder image if image is not found on network image
+  CustomImageView({
+    this.url,
+    this.imagePath,
+    this.svgPath,
+    this.file,
+    this.height,
+    this.width,
+    this.border,
+    this.placeHolder = 'assets/images/image_not_found.png',
+  });
