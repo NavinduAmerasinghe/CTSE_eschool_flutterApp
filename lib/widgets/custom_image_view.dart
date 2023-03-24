@@ -96,4 +96,20 @@ class CustomImageView extends StatelessWidget {
     }
   }
 
-  
+  Widget _buildImageView() {
+    if (svgPath != null && svgPath!.isNotEmpty) {
+      return Container(
+        height: height,
+        width: width,
+        child: SvgPicture.asset(
+          svgPath!,
+          height: height,
+          width: width,
+          fit: fit ?? BoxFit.contain,
+          color: color,
+        ),
+      );
+    
+    return SizedBox();
+  }
+}
