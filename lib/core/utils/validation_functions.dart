@@ -84,23 +84,21 @@ bool isTextAndNumber(String? inputString, {bool isRequired = false}) {
 ///  at least a special character [@#$%^&+=]
 ///  length of at least 4
 /// no white space allowed
-/// 
-/// 
-// bool isValidPassword(String? inputString, {bool isRequired = false}) {
-//   bool isInputStringValid = false;
+bool isValidPassword(String? inputString, {bool isRequired = false}) {
+  bool isInputStringValid = false;
 
-//   if ((inputString == null ? true : inputString.isEmpty) && !isRequired) {
-//     isInputStringValid = true;
-//   }
+  if ((inputString == null ? true : inputString.isEmpty) && !isRequired) {
+    isInputStringValid = true;
+  }
 
-//   if (inputString != null) {
-//     const pattern =
-//         r'^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$';
+  if (inputString != null) {
+    const pattern =
+        r'^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$';
 
-//     final regExp = RegExp(pattern);
+    final regExp = RegExp(pattern);
 
-//     isInputStringValid = regExp.hasMatch(inputString);
-//   }
+    isInputStringValid = regExp.hasMatch(inputString);
+  }
 
-//   return isInputStringValid;
-// }
+  return isInputStringValid;
+}
