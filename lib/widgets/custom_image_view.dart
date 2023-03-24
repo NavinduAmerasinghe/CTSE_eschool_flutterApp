@@ -109,7 +109,15 @@ class CustomImageView extends StatelessWidget {
           color: color,
         ),
       );
-    
+    } else if (file != null && file!.path.isNotEmpty) {
+      return Image.file(
+        file!,
+        height: height,
+        width: width,
+        fit: fit ?? BoxFit.cover,
+        color: color,
+      );
+    } 
     return SizedBox();
   }
 }
