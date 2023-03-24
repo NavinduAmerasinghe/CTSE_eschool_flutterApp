@@ -39,6 +39,21 @@ class CustomImageView extends StatelessWidget {
     this.file,
     this.height,
     this.width,
+    this.color,
+    this.fit,
+    this.alignment,
+    this.onTap,
+    this.radius,
+    this.margin,
     this.border,
     this.placeHolder = 'assets/images/image_not_found.png',
   });
+
+ @override
+  Widget build(BuildContext context) {
+    return alignment != null
+        ? Align(
+           
+          )
+        : _buildWidget();
+  }
