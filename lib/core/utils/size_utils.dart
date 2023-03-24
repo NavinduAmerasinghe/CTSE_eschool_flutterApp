@@ -19,15 +19,15 @@ get width {
 }
 
 ///This method is used to get device viewport height.
-// get height {
-//   num statusBar =
-//       MediaQueryData.fromWindow(WidgetsBinding.instance.window).viewPadding.top;
-//   num bottomBar = MediaQueryData.fromWindow(WidgetsBinding.instance.window)
-//       .viewPadding
-//       .bottom;
-//   num screenHeight = size.height - statusBar - bottomBar;
-//   return screenHeight;
-// }
+get height {
+  num statusBar =
+      MediaQueryData.fromWindow(WidgetsBinding.instance.window).viewPadding.top;
+  num bottomBar = MediaQueryData.fromWindow(WidgetsBinding.instance.window)
+      .viewPadding
+      .bottom;
+  num screenHeight = size.height - statusBar - bottomBar;
+  return screenHeight;
+}
 
 ///This method is used to set padding/margin (for the left and Right side) & width of the screen or widget according to the Viewport width.
 double getHorizontalSize(double px) {
